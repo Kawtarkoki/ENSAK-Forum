@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="https://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>FORUM</title>
+    <link type="text/css" rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+    <link type="text/css" rel="stylesheet" th:href="@{/css/style.css}">
+    <link type="text/css" rel="stylesheet" th:href="@{/fontello/css/fontello.css}">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-warning">
+    <img th:src="@{/ensak-logo.png}" alt="" height="" width="" class="navbar-brand">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul id="myNav" class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search in Forum" aria-label="Search">
+
+            <button class="searchButton btn btn-outline-danger my-2 my-sm-0" type="submit"><i class="icon-search-3"></i></button>
+
+            <div id="signDiv" sec:authorize="isAnonymous()">
+                <button id="signInButton" type="button" onclick="location.href='http://'+location.host+'/login'" class="sign btn btn-outline-info my-2 my-sm-0">Sign In</button>
+                <button id="signUpButton" type="button" onclick="location.href='http://'+location.host+'/registration'" class="sign btn btn-outline-success my-2 my-sm-0">Sign Up</button>
+            </div>
+            <div id="logoutDiv" sec:authorize="isAuthenticated()">
+                <button id="logoutButton" type="button" onclick="location.href='http://'+location.host+'/logout'" class="sign btn btn-outline-warning my-2 my-sm-0">Logout</button>
+            </div>
+
+
+        </form>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="modal fade" id="postModal" tabindex="-1" role="dialog" aria-labelledby="postModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="postModalLabel">Edit your Post :</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="postUpdateForm">
+                        <div class="form-group">
+                            <label for="postUpdate" class="col-form-label">Post :</label>
+                            <textarea class="form-control" id="postUpdate"></textarea>
+                            <input id="postUpdateId" type="hidden" value="">
+                        </div>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Save</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+            <a class="customNav nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Posts</a>
+        </li>
+        <li class="nav-item">
+            <a class="customNav nav-link" id="offers-tab" data-toggle="tab" href="#offers" role="tab" aria-controls="offers" aria-selected="false">Offers</a>
+        </li>
+        <li sec:authorize="hasRole('ROLE_ADMIN')" class="nav-item">
+            <a class="customNav nav-link" id="users-tab" data-toggle="tab" href="#users" role="tab" aria-controls="users" aria-selected="false">Users</a>
+        </li>
+    </ul>
+
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <div class="message"></div>
+            <div sec:authorize="isAuthenticated()">
+                <p id="addPostText">Add Post</p>
+                <button id="addPost" class="btn btn-info " href="#addPostArea" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="addPostArea"><span id="addPostSpan">+</span></button>
+            </div>
+            <div class="collapse" id="addPostArea" sec:authorize="isAuthenticated()">
+                <div class="posts">
+                    <form id="postForm" name="postForm">
+                        <h5>Write your Post </h5>
+                        <div class="input-group">
+                            <textarea id="post" class="form-control" aria-label="With textarea"></textarea>
+                            <div class="input-group-append">
+                                <button class="btn btn-secondary" type="submit">Share Post</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div id="postArea">
+                    <div class="postAndComments">
+                        <div class="posts row">
+                            <h3 class="loading">Loading ...</h3>
+                        </div>
+                    </div>
+            </div>
+
+
+
+
+
+
+
+
+
+        </div>
+        <div class="tab-pane fade" id="offers" role="tabpanel" aria-labelledby="offers-tab">
+            <div class="message"></div>
+            <div sec:authorize="hasRole('ROLE_ENTREPRENEUR')">
+                <p id="addOfferText">Add Offer</p>
+                <button id="addOffer" class="btn btn-info " href="#addOfferArea" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="addOfferArea"><span id="addOfferSpan">+</span></button>
+            </div>
+            <div class="collapse" id="addOfferArea" sec:authorize="hasRole('ROLE_ENTREPRENEUR')">
+                <div class="posts">
+                    <form id="offerForm" name="offerForm">
+                        <h5>Write your Offer </h5>
+                        <div class="input-group">
+                            <textarea id="offer" class="form-control" aria-label="With textarea"></textarea>
+                            <div class="input-group-append">
+                                <button class="btn btn-secondary" type="submit">Share Offer</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div id="offerArea">
+                <div class="postAndComments">
+                    <div class="posts row">
+                        <h3 class="loading">Loading...</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div sec:authorize="hasRole('ROLE_ADMIN')" class="tab-pane fade" id="users" role="tabpanel" aria-labelledby="users-tab">
+            <div class="message"></div>
+            <div id="usersArea">
+
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.1.4/sockjs.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+<script th:src="@{/js/jquery-3.5.1.js}"></script>
+<script th:src="@{/js/bootstrap.bundle.min.js}"></script>
+<script th:src="@{/js/bootstrap-confirmation-modal.min.js}"></script>
+<script th:src="@{/js/myFunctions.js}"></script>
+<script th:src="@{/js/socketFunctions.js}"></script>
+</html>

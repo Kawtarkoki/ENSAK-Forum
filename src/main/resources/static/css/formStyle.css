@@ -1,0 +1,49 @@
+
+
+body {
+    background-color: rgba(227, 227, 227, 0.15);
+}
+
+
+.navbar-brand {
+    max-width: 10%;
+    padding: 10px;
+    border: 2px;
+    border-style: solid;
+    border-radius: 10%;
+    border-color: rgba(255, 222, 178, 0.29);
+    background-color: rgba(35, 36, 36, 0.16)
+}
+
+.container{
+    margin-top: 50px;
+}
+
+Navs .searchButton{
+    margin-right: 8px;
+    padding: 6px 6px;
+}
+
+#myNav li a{
+    color: aliceblue;
+}
+.sign{
+    padding: 6px 2px;
+    margin-left: 0px;
+    background-color: rgba(252, 252, 252, 0.62);
+    border: 0px;
+    font-family: fantasy;
+}
+#loginDiv{
+    border-radius: 5px;
+    padding: 0px;
+    background-color: rgba(255, 216, 216, 0.47)
+}
+
+#loginButton:hover{
+    color: aliceblue;
+}
+
+
+
+

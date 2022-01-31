@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0149cef0-032a-4451-9e81-9ac4c355b457" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1oNzhVmXFrgj0DEat3Z1bcH8kUX" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.tabs" />
+  </component>
+  <component name="RunManager">
+    <configuration name="ForumApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.forum.ForumApp" />
+      <module name="OurForum" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.forum.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <module name="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <module name="" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ForumApp" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0149cef0-032a-4451-9e81-9ac4c355b457" name="Default Changelist" comment="" />
+      <created>1613141956042</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1613141956042</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="233" y="3" key="#Notifications" timestamp="1613999081647">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="233" y="3" key="#Notifications/0.0.1280.689@0.0.1280.689" timestamp="1613999081647" />
+    <state x="361" y="57" width="473" height="581" key="#com.intellij.ide.util.MemberChooser" timestamp="1614028616664">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="361" y="57" width="473" height="581" key="#com.intellij.ide.util.MemberChooser/0.0.1280.689@0.0.1280.689" timestamp="1614028616664" />
+    <state x="406" y="211" width="404" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1613916180660">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="406" y="211" width="404" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1280.689@0.0.1280.689" timestamp="1613916180660" />
+    <state x="422" y="87" key="FileChooserDialogImpl" timestamp="1613774440618">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="422" y="87" key="FileChooserDialogImpl/0.0.1280.689@0.0.1280.689" timestamp="1613774440618" />
+    <state width="1237" height="314" key="GridCell.Tab.0.bottom" timestamp="1614214990422">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1237" height="314" key="GridCell.Tab.0.bottom/0.0.1280.689@0.0.1280.689" timestamp="1614214990422" />
+    <state width="1237" height="314" key="GridCell.Tab.0.center" timestamp="1614214990422">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1237" height="314" key="GridCell.Tab.0.center/0.0.1280.689@0.0.1280.689" timestamp="1614214990422" />
+    <state width="1237" height="314" key="GridCell.Tab.0.left" timestamp="1614214990421">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1237" height="314" key="GridCell.Tab.0.left/0.0.1280.689@0.0.1280.689" timestamp="1614214990421" />
+    <state width="1237" height="314" key="GridCell.Tab.0.right" timestamp="1614214990422">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1237" height="314" key="GridCell.Tab.0.right/0.0.1280.689@0.0.1280.689" timestamp="1614214990422" />
+    <state x="337" y="169" key="com.intellij.ide.util.TipDialog" timestamp="1614262445352">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="337" y="169" key="com.intellij.ide.util.TipDialog/0.0.1280.689@0.0.1280.689" timestamp="1614262445352" />
+    <state x="465" y="70" width="739" height="606" key="find.popup" timestamp="1614263076630">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="465" y="70" width="739" height="606" key="find.popup/0.0.1280.689@0.0.1280.689" timestamp="1614263076630" />
+    <state x="297" y="153" key="run.anything.popup" timestamp="1613845333062">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="297" y="153" key="run.anything.popup/0.0.1280.689@0.0.1280.689" timestamp="1613845333062" />
+    <state x="297" y="-1" width="672" height="676" key="search.everywhere.popup" timestamp="1613836576292">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="297" y="-1" width="672" height="676" key="search.everywhere.popup/0.0.1280.689@0.0.1280.689" timestamp="1613836576292" />
+  </component>
+</project>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="https://www.thymeleaf.org">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Regitration</title>
+    <link type="text/css" rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+    <link type="text/css" rel="stylesheet" th:href="@{/fontello/css/fontello.css}">
+    <link type="text/css" rel="stylesheet" th:href="@{/css/formStyle.css}">
+
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-warning">
+    <img src="ensak-logo.png" alt="" height="" width="" class="navbar-brand">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul id="myNav" class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <div id="loginDiv">
+                <button id="loginButton" type="button" onclick="location.href='http://'+location.host+'/login'" class="sign btn btn-outline-warning my-2 my-sm-0">Sign In</button>
+            </div>
+        </form>
+    </div>
+</nav>
+<div id="successAlert" class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+    </div>
+</div>
+<div class="container">
+    <form id="myRegistrationForm" class="needs-validation" novalidate>
+        <div class="form-row">
+            <div class="col-md-6 mb-3">
+                <label for="firstName">First name</label>
+                <input type="text" class="form-control formInput" id="firstName" placeholder="First name" required>
+                <div class="invalid-feedback">
+                    This field is required =)
+                </div>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="familyName">Last name</label>
+                <input type="text" class="form-control formInput" id="familyName" placeholder="Family name" required>
+                <div class="invalid-feedback">
+                    This field is required =)
+                </div>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+
+        </div>
+        <div class="form-row">
+            <div class="col-md-4 mb-3">
+                <label for="username">Username</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroupPrepend">@</span>
+                    </div>
+                    <input type="text" class="form-control formInput" id="username" placeholder="Username" aria-describedby="inputGroupPrepend" required>
+                    <div class="invalid-feedback">
+                        This field is required =)
+                    </div>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="password">Password</label>
+                <input type="password" class="form-control formInput" autocomplete="off" id="password" placeholder="Password" required>
+                <div class="invalid-feedback">
+                    This field is required =)
+                </div>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="form-group col-md-4 mb-3">
+
+                <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="role" id="gridRadios1" value="1" checked>
+                        <label class="form-check-label" for="gridRadios1">
+                            User
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="role" id="gridRadios2" value="2">
+                        <label class="form-check-label" for="gridRadios2">
+                            Entrepreneur
+                        </label>
+                        <div class="invalid-feedback">
+                            This field is required =)
+                        </div>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <button class="btn btn-primary" type="submit">Register</button>
+        <p>Already have an account ? <a href="http://localhost/login">Sign In</a></p>
+    </form>
+
+</div>
+</body>
+<script th:src="@{/js/jquery-3.5.1.js}"></script>
+<script th:src="@{/js/bootstrap.bundle.min.js}"></script>
+<script th:src="@{/js/formValidation.js}"></script>
+</html>

@@ -1,0 +1,474 @@
+:root {
+    --bodyColor: #181a1b;
+    --newBodyColor: #2c5164;
+    --postColor: #3f485d;
+    --offerColor: #1f282c;
+    --userColor: #18403d;
+    --usernameColor: #fff;
+    --navColor:#293e50;
+    --likeColor:#a35454;
+}
+body {
+    background-color: var(--newBodyColor);
+}
+
+
+.navbar-brand {
+    max-width: 10%;
+    padding: 10px;
+    border: 2px;
+    border-style: solid;
+    border-radius: 10%;
+    border-color: rgba(255, 222, 178, 0.29);
+    background-color: rgba(35, 36, 36, 0.16)
+}
+
+Navs .searchButton{
+    margin-right: 8px;
+    padding: 6px 6px;
+}
+.sign{
+    padding: 6px 2px;
+    margin-left: 0px;
+    background-color: rgba(252, 252, 252, 0.62);
+    border: 0px;
+    font-family: fantasy;
+}
+#signDiv, #logoutDiv{
+    border-radius: 5px;
+    padding: 0px;
+    margin-left: 30px;
+    background-color: rgba(255, 216, 216, 0.47)
+}
+
+#signUpButton{
+    margin-left: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+#signInButton{
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+#logoutButton:hover{
+    color: aliceblue;
+}
+
+
+.customNav.nav-link.active {
+    background-color: var(--navColor);
+    color: #07c6ff;
+}
+
+.customNav {
+    color: aliceblue;
+    margin: 15px 0px 0px 20px;
+}
+
+.customNav:hover {
+    color: #ffc107;
+}
+
+#myNav li a{
+    color: aliceblue;
+}
+#myTabContent {
+    color: aliceblue
+}
+
+th {
+    color: rgba(250, 235, 215, 0.55);
+    width: 20%;
+}
+
+td {
+    color: rgba(250, 235, 215, 0.55);
+    text-align: left;
+    width: 50%;
+}
+
+.threedots{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+.threedotsbutton{
+    font-size: 25px;
+    color: aliceblue;
+    border: none;
+    background: none;
+    padding: 0px;
+    cursor: pointer
+}
+
+.threedotsbutton:focus{
+    outline:none;
+}
+
+
+.posts{
+    position: relative;
+    margin: 5px;
+    padding: 40px;
+    border: 1px;
+    border-style: solid;
+    border-radius: 10px;
+    background-color: var(--postColor);
+}
+#offers .posts{
+    background-color: var(--offerColor);;
+}
+
+#users .posts{
+    padding: 10px;
+    background-color: var(--userColor);
+}
+
+.postText{
+    font-family: monospace;
+    font-size: 22px;
+    font-style: oblique;
+}
+
+.postUser{
+    min-width: 60px;
+    align-self: center;
+    text-align: center;
+    padding: 10px;
+    color: var(--usernameColor);
+}
+
+.offerUser{
+    min-width: 60px;
+    align-self: center;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+}
+
+.dot{
+    padding: 2px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: right;
+    font-size: 20px;
+    text-shadow: -0.25px 0.25px 0.25px #393939,
+                    0.25px 0.25px 0.25px #393939,
+                    0.25px -0.25px 0 #393939,
+                    -0.25px -0.25px 0 #393939;
+}
+
+.likeComment{
+    text-align: center;
+/*    margin: 2px;*/
+/*    max-height: 40px;*/
+    padding: 0px;
+    align-self: center;
+}
+
+.tableCommentsDiv{
+    width: 90%;
+    margin: 1px auto;
+}
+
+
+table{
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+tr:first-child{
+    border-top-style: hidden;
+}
+
+#home, #offers, #users{
+    position: relative;
+    padding-top: 50px;
+}
+
+#addPost, #addOffer{
+    position: absolute;
+    top: 3px;
+    right: 20px;
+    border: solid 3px;
+    border-radius: 50%;
+    padding: 0px;
+}
+
+#addPostText, #addOfferText{
+    position: absolute;
+    top: 11px;
+    right: 64px;
+    padding: 1px 15px;
+    margin:0px;
+    display: inline-block;
+    border: solid 2px;
+    border-radius: 10px;
+    border-right: none;
+}
+
+#addOfferText{
+    background-color: var(--offerColor);
+}
+
+#addPostText{
+    background-color: var(--postColor);
+}
+
+
+#addPostSpan, #addOfferSpan{
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    padding: 0px 10px;
+    background-color: #d9d9d9;
+    color: #00c4ff;
+    text-align: center;
+    font: 35px Arial, sans-serif;
+}
+
+.commentInputCheckbox, .likeInputCheckbox{
+    display: none;
+}
+
+ .commentLabelCheckbox, .likeLabelCheckbox{
+    margin: 0px ;
+}
+
+.commentInputCheckbox:checked + label{
+    background-color: #276f84;
+        border: none;
+        color: aliceblue;
+}
+.likeInputCheckbox:checked + label{
+    background-color: var(--likeColor);
+    border-color: var(--likeColor);
+    color: #fff
+}
+
+.commentContentTd{
+    width: 65%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    color: #fff;
+}
+.commentUserTd{
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    color: #fff;
+}
+.mytableComments{
+    table-layout: fixed
+}
+.dateTd{
+    width: 12%;
+        font-size: 11px;
+        font-family: serif;
+}
+.attributeName{
+    color: rgb(196, 248, 255);
+    font-size: 12px;
+    text-decoration-line: underline;
+}
+
+.threedotsComment{
+        border: none;
+        color: #fff;
+        background-color: transparent;
+        padding: 0px;
+}
+.threedotsComment:focus{
+    outline: none;
+}
+
+.comment td:last-child{
+    width: 10%;
+    vertical-align: top;
+    text-align: right
+}
+/*
+body {
+    background-color: #181a1b;
+
+}
+
+
+.navbar-brand {
+    max-width: 10%;
+    padding: 10px;
+    border: 2px;
+    border-style: solid;
+    border-radius: 10%;
+    border-color: rgba(255, 222, 178, 0.29);
+    background-color: rgba(35, 36, 36, 0.16)
+}
+
+*/
+/*Navs*//*
+
+.searchButton{
+    margin-right: 8px;
+    padding: 6px 6px;
+}
+.sign{
+    padding: 6px 2px;
+    margin-left: 30px;
+    background-color: rgba(252, 252, 252, 0.62);
+    border: 0px;
+    font-family: fantasy;
+}
+
+
+.customNav.nav-link.active {
+    background-color: #181a1b;
+    color: #07c6ff;
+
+}
+
+.customNav {
+    color: aliceblue;
+    margin: 15px 0px 0px 20px;
+}
+
+.customNav:hover {
+    color: #ffc107;
+
+}
+
+#myTabContent {
+    color: aliceblue
+}
+
+th {
+    color: rgba(250, 235, 215, 0.55);
+}
+
+td {
+    color: rgba(250, 235, 215, 0.55);
+    text-align: left;
+}
+
+
+.posts{
+    margin: 5px;
+    padding: 20px;
+    border: 2px;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+.postText{
+    max-width: 70%;
+    min-width: 60%;
+    color: darkgray;
+    font-family: monospace;
+    font-size: 15px;
+    font-style: oblique;
+
+}
+
+.postUser{
+    min-width: 60px;
+    align-self: center;
+    text-align: center;
+}
+
+.dot{
+    padding: 2px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: right;
+        text-shadow: -0.5px 0.5px 0.5px #000,
+    				  0.5px 0.5px 0.5px #000,
+    				  0.5px -0.5px 0 #000,
+    				  -0.5px -0.5px 0 #000;
+}
+
+.postAndComments:nth-child(6n) .dot {
+    background-color: #3b745a;
+}
+
+.postAndComments:nth-child(6n+1) .dot {
+    background-color: #bf2e2e;
+}
+
+.postAndComments:nth-child(6n+2) .dot {
+    background-color: #2b8bbe;
+}
+
+.postAndComments:nth-child(6n+3) .dot {
+    background-color: #b49b7a;
+}
+
+.postAndComments:nth-child(6n+4) .dot {
+    background-color: #f0eda1;
+}
+
+.postAndComments:nth-child(6n+5) .dot {
+    background-color: #cc15d3;
+}
+
+
+
+.likeComment{
+    align-self: center;
+    text-align: center;
+    margin: 2px;
+    max-height: 40px;
+
+}
+
+.tableComments{
+    width: 90%;
+    margin: 1px auto;
+}
+
+
+table{
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+tr:first-child{
+    border-top-style: hidden;
+}
+
+
+#addPost{
+    position: relative;
+    top: -50px;
+    left: 88%;
+    border: solid 3px;
+    border-radius: 50%;
+    padding: 0px;
+}
+
+#addPostSpan{
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    padding: 0px 9px;
+    background-color: #020007;
+    color: #00c4ff;
+    text-align: center;
+
+    font: 35px Arial, sans-serif;
+}
+
+.commentInputCheckbox{
+    display: none;
+}
+
+ .commentLabelCheckbox{
+    margin: 0px !important;
+}
+
+.likeComment input[type=checkbox]:checked ~ label{
+    background-color: #3f485d;
+    color: #fff
+}*/
